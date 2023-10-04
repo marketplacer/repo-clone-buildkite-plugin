@@ -1,0 +1,9 @@
+name: Repo Clone
+description: Simple git clone of an extra repository
+author: https://github.com/marketplacer/
+requirements: []
+configuration:
+  properties:
+    repository:
+      type: string
+  additionalProperties: false

@@ -1,0 +1,11 @@
+version: '3'
+services:
+  tests:
+    image: buildkite/plugin-tester
+    volumes:
+      - ".:/plugin:ro"
+  linter:
+    image: buildkite/plugin-linter
+    command: ['--id', 'marketplacer/repo-clone']
+    volumes:
+      - ".:/plugin:ro"
